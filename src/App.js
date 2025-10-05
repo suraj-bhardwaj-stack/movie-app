@@ -1,12 +1,17 @@
-import { Fragment } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home/Home';
+
 
 function App() {
   return (
-    <Fragment>
-      <Navbar/>
-    </Fragment>
+    <>
+       <Routes>
+        <Route to="/" element={<Home/>}>Home</Route>
+      </Routes>
+      <Home/>
+    </>
+   
   );
 }
 

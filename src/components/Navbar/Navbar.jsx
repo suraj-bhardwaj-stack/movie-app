@@ -2,7 +2,7 @@ import { styled, alpha } from '@mui/material/styles';
 import {AppBar , Box , Toolbar , InputBase} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import SelectMovieLable from '../SelectMovieLable/SelectMovieLable';
-
+import { NavLink } from 'react-router-dom';
  
 
 const Search = styled('div')(({ theme }) => ({
@@ -48,12 +48,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Navbar() {
 
   return (
+    
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
+            <NavLink to="/">
           <div className="logo">
             <strong>Watcheess</strong>
           </div>
+          </NavLink>
             
          
           
